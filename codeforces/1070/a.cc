@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> // {{{
+#include <bits/stdc++.h>  // {{{
 
 #include <version>
 #ifdef __cpp_lib_ranges_enumerate
@@ -20,9 +20,11 @@ using f64 = double;
 using f128 = long double;
 
 #if __cplusplus >= 202002L
-template <typename T> constexpr T MIN = std::numeric_limits<T>::min();
+template <typename T>
+constexpr T MIN = std::numeric_limits<T>::min();
 
-template <typename T> constexpr T MAX = std::numeric_limits<T>::max();
+template <typename T>
+constexpr T MAX = std::numeric_limits<T>::max();
 #endif
 
 #ifdef LOCAL
@@ -35,25 +37,10 @@ template <typename T> constexpr T MAX = std::numeric_limits<T>::max();
 //  }}}
 
 void solve() {
-  u32 n, m, k;
-  string s;
-
-  cin >> n >> m >> k;
-
-  vector<u32> a(n), b(m);
-
-  for (u32 i = 0; i < n; ++i) {
-    cin >> a[i];
-  }
-
-  for (u32 i = 0; i < m; ++i) {
-    cin >> b[i];
-  }
-
-  cin >> s;
+  
 }
 
-int main() { // {{{
+int main() {  // {{{
   std::cin.exceptions(std::cin.failbit);
 #ifdef LOCAL
   std::cerr.rdbuf(std::cout.rdbuf());
@@ -63,9 +50,9 @@ int main() { // {{{
   std::cin.tie(nullptr)->sync_with_stdio(false);
 #endif
   u32 tc = 1;
-  std::cin >> tc;
+  std::cin >> t;
   for (u32 t = 0; t < tc; ++t) {
     solve();
   }
   return 0;
-} // vim: set foldmethod=marker foldmarker={{{,}}}
+}  // vim: set foldmethod=marker foldmarker={{{,}}}
